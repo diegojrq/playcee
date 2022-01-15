@@ -1,0 +1,11 @@
+.navbar {
+  background-color: black;
+}
+
+.nav-link, .navbar-brand {
+  color: white !important;
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
