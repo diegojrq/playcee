@@ -3,7 +3,11 @@ const { listen } = require("express/lib/application");
 
 const app  = express();
 
-const dbConfig = require('./db.js') 
+const dbConfig = require('./db') 
+
+const roomsRoute = require("./routes/rooms")
+
+app.use("/api/rooms", roomsRoute)
 
 const port = process.env.port || 5000;
 
