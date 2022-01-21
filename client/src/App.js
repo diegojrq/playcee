@@ -1,15 +1,23 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import {BrowserRouter , Route, Link} from 'react-router-dom'
 import HomeScreen from './screens/HomeScreen'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <BrowserRouter>
-        <Route path="/home" exact component={HomeScreen} / >
+      <Routes>
+        <Route path='/home' element={<HomeScreen/>} />
+        
+
+      </Routes>
+
       </BrowserRouter>
+
+
+
     </div>
   );
 }
